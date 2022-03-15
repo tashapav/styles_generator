@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssStyles-generator</title>
+</head>
+<body>
+    <div class="text">
+        <h1 id="tryOnText">Css Styles generator</h1>
+    </div>
+    <div class="container">
+        <div class="cards">
+            
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <div>
+                            <label class="head-for-input" for="main-text">Введите текст</label>
+                            <input type="text" id="main-text" maxlength="20" placeholder="Css Styles generator">
+                            <button class="btn-text">Применить</button>
+                        </div>
+                        <div class="head-for-input">
+                            <div>
+                                <label for="color-box">Цвет тени</label>
+                                <input id="color-box" type="color" value="#00ff00">
+                            </div>
+                            <div>
+                                <label for="text-color">Цвет текста</label>
+                                <input id="text-color" type="color" value="#000000">
+                            </div>
+                        </div>
+                        <label class="head-for-input" for="font-size">Размер шрифта</label>
+                        <input id="font-size" type="range" min="10" max="50" step="1" value="50">
+                        <label class="head-for-input" for="offset_x">Смещение тени по оси х</label>
+                        <input id="offset_x" type="range" min="-20" max="20" step="1" value="4">
+                        <label class="head-for-input" for="offset_y">Смещение тени по оси у</label>
+                        <input  id="offset_y" type="range" min="-20" max="20" step="1" value="-1">
+                    </div>
+                </div>
+            
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <label class="head-for-input" for="blur">Размытие тени</label>
+                        <input id="blur" type="range" min="0" max="50" step="1" value="5">
+                        <label class="head-for-input" for="opacity">Прозрачность тени</label>
+                        <input id="opacity" type="range" min="0" max="1" step="0.01" value="1">
+                        <div class="head-for-input">
+                            <input id="gradient" type="checkbox">
+                            <label for="gradient">Градиент текста</label>
+                        </div>
+                        <div class="hidden-gradient">
+                            <label class="head-for-input" for="color-box1">Начальный цвет</label>
+                            <input id="color-box1" type="color" value="#000000">
+                            <label class="head-for-input" for="color-box2">Конечный цвет</label>
+                            <input id="color-box2" type="color" value="#ffffff">
+                            <label class="head-for-input" for="corner">Направление градиента</label>
+                            <input id="corner" type="range" min="0" max="360" step="1" value="0">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <label class="head-for-input" for="result">CSS код</label>
+                        <textarea id="result" rows="9" cols="35" readonly></textarea>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>
