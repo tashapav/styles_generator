@@ -5,15 +5,19 @@
   "author": "tashapav",
   "license": "ISC",
   "description": "",
+  "homepage": "https://tashapav.github.io/styles_generator/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "browserslist": "> 0.25%, not dead",
   "keywords": [
-    "css styles", "cssStyles-generator"
+    "css styles",
+    "cssStyles-generator"
   ],
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -37,6 +41,7 @@
   "type": "module",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1"
   }
